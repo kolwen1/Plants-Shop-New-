@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	transition: all 0.9s ease-in;
+	scroll-behavior: smooth;
+}
+@font-face {
+	font-family: "Cinzel-Regular";
+	src:url("../fonts/Cinzel-Regular.ttf");
+}
+
+body{
+	font-size: 24px;
+	height: 100vh;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.header-content {
+	font-family: Cinzel-Regular;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 100px;
+	padding: 5px;
+
+	background-size: cover;
+	background-position: center center;
+	color: white;
+}
+
+nav {
+	height: 26px;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 20px 50px;
+}
+
+.logo{
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+}
+
+.menu{
+	display: flex;
+	list-style: none;
+
+}
+.menu li{
+	padding: 1em 2em;
+}
+.menu li a{
+	color: black;
+	text-decoration: none;
+}
+
+.menu a:hover { 
+	border-bottom: 1px solid black;
+}
+
+.main-banner {
+	background-image: url("images/Main-images/Doctor.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.banner{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 555px;
+}
+
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	row-gap: 10px;
+
+	align-self: flex-end;
+	padding-bottom: 30px;
+}
+
+.title h1 {
+	font-size: 72px;	
+	padding: 10px;
+
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+.title h1:nth-child(3) {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.banner p{
+	font-size: 22px;
+}
+
+.banner-shop {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	justify-content: center;
+
+	padding: 45px;
+	height: 465px;
+	background-color: rgba(255, 255, 0, 0.5);
+	color: white;
+}
+
+.banner-shop p {
+	max-width: 365px;	
+}
+
+.banner-button {
+	border-radius: 20px;
+	background: darkslategray;
+	text-align: center;
+	color: white;
+	padding: 10px 50px; 
+	font-size: 20px;  
+	border: none;
+}
+
+.banner-button a:hover{
+	color: greenyellow;
+	transition: 0.9s;
+}
+
+.Doctor{
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+	justify-content: center;
+	padding: 50px;
+	padding-left: 20rem;
+	padding-right: 20rem;
+}
+
+.Doctor img{
+	width: 35%;
+	float: left;
+	position: flex;
+	margin: 0px 20px 20px 0px;
+
+}
+
+footer {
+
+	height: 20vh;
+	background: black;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+footer p{
+	padding: 15px 0;
+}
+
+.social_contacts{
+	display: flex;
+	width: 10vw;
+	justify-content: space-between;
+	color: black;
+}
+
+.social_contacts a:hover {
+	color:	greenyellow;
+	transition: 0.2s;
+}
+
+@media all and (max-width: 100px) and (max-width: 600px) {
+	body{
+	background-image: url("images/Main-images/Doctor.jpg");
+	
+}
+}
+
+
